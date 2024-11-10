@@ -8,4 +8,4 @@ function FirstText() {
     )
 }
 
-export default FirstText
+export {FirstText}
