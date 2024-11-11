@@ -1,13 +1,8 @@
 import React from 'react'
 import './App.css'
-import FirstText from './components/firstComponent'
 
 function App() {
-    return (
-        <>
-            <FirstText />
-        </>
-    )
+    return <></>
 }
 
 export default App
