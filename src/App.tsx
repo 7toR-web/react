@@ -1,11 +1,13 @@
 import React from 'react'
 import './App.css'
-import {FirstText} from './components/firstComponent'
+import { Profile } from './components/passing props'
+import { FirstText } from './components/firstComponent'
 
 function App() {
     return (
         <>
-            <FirstText />
+            {/* <FirstText /> */}
+            <Profile />
         </>
     )
 }
