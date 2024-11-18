@@ -21,6 +21,7 @@ const joberYana = {
         // title: 1231                       wrong property type
         title: `TypeScript development`,
     },
+// num: 5
 }
 
 const logUserJobTitle = (user: { job: { title: string } }) => {
@@ -42,3 +43,8 @@ const myFunction = (a: number, b: number) => {
     return a + b
 }
 // hover to explore what does function do ^^^^^^^
+
+//NEW NOTE
+
+// very useful is running tsx in watching mode >> write tsc --watch << in terminal
+//it catchs ur errors while typing
