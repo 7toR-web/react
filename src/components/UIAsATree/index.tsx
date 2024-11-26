@@ -1,0 +1,1 @@
+// const next = () => setIndex((index + 1) % quotes.length) when index is the last item in array, it goes back to [0] item bcause 5 % 5 = 0(if length == 5), but if first number is smaller than second, just shows first one
