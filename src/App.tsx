@@ -10,6 +10,7 @@ import { Button } from './addingInteractivity/respondingEvents'
 import { AlertButton } from './addingInteractivity/respondingEvents'
 import { PlayingButton } from './addingInteractivity/respondingEvents'
 import { UploadButton } from './addingInteractivity/respondingEvents'
+import { Gallery } from './addingInteractivity/state:ComponentsMemory'
 
 function App() {
     return (
@@ -20,11 +21,12 @@ function App() {
             {/* <List /> */}
             {/* <ReceipeLists/> */}
             {/* <Separator /> */}
-            <Button />
-            <AlertButton message='Playing!' children={7} />
-            <AlertButton message='Clicked!' children={17} />
-            <PlayingButton movieName='Tom and Jery'/>
-            <UploadButton />
+            {/* <Button /> */}
+            {/* <AlertButton message='Playing!' children={7} /> */}
+            {/* <AlertButton message='Clicked!' children={17} /> */}
+            {/* <PlayingButton movieName='Tom and Jery'/> */}
+            {/* <UploadButton /> */}
+            <Gallery />
         </>
     )
 }
