@@ -11,12 +11,14 @@ import { AlertButton } from './addingInteractivity/respondingEvents'
 import { PlayingButton } from './addingInteractivity/respondingEvents'
 import { UploadButton } from './addingInteractivity/respondingEvents'
 import { Gallery } from './addingInteractivity/state:ComponentsMemory'
+import { Form } from './addingInteractivity/stateAsSnapshot'
+import { TraficLight } from './addingInteractivity/stateAsSnapshot'
 
 function App() {
     return (
         <>
-            {/* <FirstText /> */}
             {/* <Profile /> */}
+            {/* <FirstText /> */}
             {/* <PackingList /> */}
             {/* <List /> */}
             {/* <ReceipeLists/> */}
@@ -26,7 +28,9 @@ function App() {
             {/* <AlertButton message='Clicked!' children={17} /> */}
             {/* <PlayingButton movieName='Tom and Jery'/> */}
             {/* <UploadButton /> */}
-            <Gallery />
+            {/* <Gallery /> */}
+            <Form />
+            <TraficLight />
         </>
     )
 }
