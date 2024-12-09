@@ -13,6 +13,8 @@ import { UploadButton } from './addingInteractivity/respondingEvents'
 import { Gallery } from './addingInteractivity/state:ComponentsMemory'
 import { Form } from './addingInteractivity/stateAsSnapshot'
 import { TraficLight } from './addingInteractivity/stateAsSnapshot'
+import { Counter } from './addingInteractivity/seriesOfStateUpdates'
+import { ArtMarketPlace } from './addingInteractivity/seriesOfStateUpdates'
 
 function App() {
     return (
@@ -29,8 +31,10 @@ function App() {
             {/* <PlayingButton movieName='Tom and Jery'/> */}
             {/* <UploadButton /> */}
             {/* <Gallery /> */}
-            <Form />
-            <TraficLight />
+            {/* <Form /> */}
+            {/* <TraficLight /> */}
+            <Counter />
+            <ArtMarketPlace />
         </>
     )
 }
