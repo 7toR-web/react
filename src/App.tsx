@@ -15,6 +15,8 @@ import { Form } from './addingInteractivity/stateAsSnapshot'
 import { TraficLight } from './addingInteractivity/stateAsSnapshot'
 import { Counter } from './addingInteractivity/seriesOfStateUpdates'
 import { ArtMarketPlace } from './addingInteractivity/seriesOfStateUpdates'
+import {StateTypes} from "./addingInteractivity/updatingObjectsInState/index"
+import { StateForm } from './addingInteractivity/updatingObjectsInState/index'
 
 function App() {
     return (
@@ -33,8 +35,10 @@ function App() {
             {/* <Gallery /> */}
             {/* <Form /> */}
             {/* <TraficLight /> */}
-            <Counter />
-            <ArtMarketPlace />
+            {/* <Counter /> */}
+            {/* <ArtMarketPlace /> */}
+            {/* <StateTypes /> */}
+            <StateForm />
         </>
     )
 }
