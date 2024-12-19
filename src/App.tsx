@@ -22,6 +22,9 @@ import { FilterList } from './addingInteractivity/updatingArraysInState/index'
 import { ShapeEditor } from './addingInteractivity/updatingArraysInState'
 import { Counter } from './addingInteractivity/updatingArraysInState/index'
 import { ReverseList } from './addingInteractivity/updatingArraysInState/index'
+import { ClickCounter } from './additionalTasks'
+import { ToDoList } from './additionalTasks'
+import { WorkForm } from './additionalTasks/index'
 
 function App() {
     return (
@@ -44,11 +47,16 @@ function App() {
             {/* <ArtMarketPlace /> */}
             {/* <StateTypes /> */}
             {/* <StateForm /> */}
-            <List />
-            <FilterList />
-            <ShapeEditor /> <br />
-            <Counter />
-            <ReverseList />
+            {/* <List /> */}
+            {/* <FilterList /> */}
+            {/* <ShapeEditor /> <br /> */}
+            {/* <Counter /> */}
+            {/* <ReverseList /> */}
+            <ClickCounter />
+            <br />
+            <br />
+            <ToDoList />
+            <WorkForm />
         </>
     )
 }
