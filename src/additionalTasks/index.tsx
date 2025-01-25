@@ -1,3 +1,4 @@
+import { error } from 'console'
 import css from './additionalTasks.module.css'
 import { useState } from 'react'
 import { useImmer } from 'use-immer'
@@ -355,3 +356,98 @@ const Groceries = () => {
     )
 }
 export { Groceries }
+
+interface UserListProps {
+    users: { id: number; name: string; email: string }[]
+}
+
+const UserList = (props: UserListProps) => {
+    const { users } = props
+    return (
+        <ul>
+            {users.map(item => {
+                return (
+                    <li key={item.id}>
+                        {item.name}: {item.email}
+                    </li>
+                )
+            })}
+        </ul>
+    )
+}
+
+export { UserList }
+
+interface RatingProps {
+    score: number
+    max: number
+}
+
+const Rating = (props: RatingProps) => {
+    const { score, max } = props
+
+    return (
+        <div>
+            <p>
+                {score}/{max}
+            </p>
+            <p>{score > max ? 'Error rating' : score}</p>
+        </div>
+    )
+}
+
+export { Rating }
+
+interface ThereSwitcherProps {
+    theme: 'dark' | 'light'
+}
+
+const ThemeSwitcher = (props: ThereSwitcherProps) => {
+    const { theme } = props
+
+    return (
+        <div
+            style={{
+                textAlign: 'center',
+                width: '200px',
+                height: '200px',
+                margin: '20px',
+                color: 'rgb(255, 255, 255)',
+                background:
+                    theme === 'dark' ? 'rgb(0, 0, 140)' : 'rgb(255, 0, 220)',
+            }}
+        >
+            Hello World
+        </div>
+    )
+}
+
+export { ThemeSwitcher }
+
+interface CounterProps {
+    counter: number
+    step: number
+}
+
+const CounterUsingProps = (props: CounterProps) => {
+    const { counter, step } = props
+    const [stepState, setStep] = useState<number>(step)
+
+    return (
+        <>
+            <p>{stepState}</p>
+            <button
+                onClick={() =>
+                    setStep(prev => (prev < counter ? prev + 1 : counter))
+                }
+            >
+                step + 1
+            </button>
+            <button onClick={() => setStep(prev => (prev > 0 ? prev - 1 : 0))}>
+                step - 1
+            </button>
+        </>
+    )
+}
+
+export { CounterUsingProps }
