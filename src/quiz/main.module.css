@@ -1,0 +1,9 @@
+.quizContainer {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

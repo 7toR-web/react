@@ -1,0 +1,18 @@
+.familiarizationContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.familiarizationContainer > button {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 30px;
+    background-color: blueviolet;
+    color: white;
+}
+
+.notDisplay {
+    display: none;
+}
